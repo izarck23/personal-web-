@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luxe Business & Salon Template — CoderTech</title>
+    <meta
+      name="description"
+      content="Business website template with online appointment booking, transparent pricing and service cards."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <a href="#" class="brand">Luxe<span>Salon</span></a>
+        <nav class="nav">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#about">About</a>
+          <a href="#hours">Hours</a>
+        </nav>
+        <a href="#booking" class="btn btn-primary">Book Online</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <span class="badge">Westlands, Nairobi</span>
+          <h1>Premium Grooming & Spa Services</h1>
+          <p class="lead">
+            Experience world-class salon styling, precision cuts, and rejuvenating wellness
+            treatments.
+          </p>
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary">Book Appointment</a>
+            <a href="#services" class="btn btn-outline">Explore Menu</a>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="section">
+        <div class="container">
+          <h2 class="section-title">Our Featured Services</h2>
+          <p class="section-subtitle">
+            Transparent rates in KSh with instant booking availability.
+          </p>
+          <div class="grid">
+            <div class="card">
+              <h3>Precision Haircut & Beard Trim</h3>
+              <p class="price">KSh 1,500 <small>/ 45 mins</small></p>
+              <p>
+                Custom consultation, precision clipper fade, razor edge finish, and hot towel
+                treatment.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Signature Hair Styling & Wash</h3>
+              <p class="price">KSh 2,500 <small>/ 60 mins</small></p>
+              <p>Deep conditioning shampoo, scalp massage, blowout, and precision heat styling.</p>
+            </div>
+            <div class="card">
+              <h3>Rejuvenating Facial Spa</h3>
+              <p class="price">KSh 3,800 <small>/ 75 mins</small></p>
+              <p>
+                Full skin cleanse, botanical exfoliation, pore purification, and organic hydrating
+                mask.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="booking" class="section bg-alt">
+        <div class="container narrow">
+          <h2 class="section-title">Request an Appointment</h2>
+          <p class="section-subtitle">Select your preferred service and time.</p>
+          <form
+            class="form"
+            onsubmit="
+              event.preventDefault();
+              document.getElementById('booking-status').textContent =
+                'Appointment requested! Our front desk will confirm via SMS within 15 minutes.';
+            "
+          >
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" required placeholder="Jane Doe" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number (M-Pesa / SMS)</label>
+              <input type="tel" id="phone" required placeholder="07XX XXX XXX" />
+            </div>
+            <div class="form-group">
+              <label for="service">Select Service</label>
+              <select id="service">
+                <option>Precision Haircut & Beard Trim (KSh 1,500)</option>
+                <option>Signature Hair Styling & Wash (KSh 2,500)</option>
+                <option>Rejuvenating Facial Spa (KSh 3,800)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-full">Confirm Booking Request</button>
+            <p id="booking-status" class="status-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; Luxe Salon Template. Engineered by CoderTech (Isaac, Kenya).</p>
+        <p>Zero dependencies &bull; Vanilla HTML5 &bull; Responsive CSS3</p>
+      </div>
+    </footer>
+  </body>
+</html>

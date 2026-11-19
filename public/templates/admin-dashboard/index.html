@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CoderTech Modern Admin Dashboard Template</title>
+    <meta
+      name="description"
+      content="Sleek admin portal template with KPI metrics, revenue charts, order management and customer data tables."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <div class="brand-logo">CT</div>
+          <span>AdminPortal</span>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#" class="nav-item active"><span class="icon">📊</span> Overview</a>
+          <a href="#" class="nav-item"
+            ><span class="icon">📦</span> Orders <span class="badge">12</span></a
+          >
+          <a href="#" class="nav-item"><span class="icon">👥</span> Customers</a>
+          <a href="#" class="nav-item"><span class="icon">📁</span> Templates</a>
+          <a href="#" class="nav-item"><span class="icon">⚙️</span> Settings</a>
+        </nav>
+        <div class="sidebar-user">
+          <div class="user-avatar">IS</div>
+          <div class="user-info">
+            <p class="user-name">Isaac Simiyu</p>
+            <p class="user-role">Administrator</p>
+          </div>
+        </div>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <h2>Marketplace Overview</h2>
+          <div class="topbar-actions">
+            <span class="currency-tag">Mode: Live Dashboard UI</span>
+            <button class="btn btn-primary" onclick="alert('Exporting monthly statement (CSV)...')">
+              Export Report
+            </button>
+          </div>
+        </header>
+        <div class="content-body">
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <span class="kpi-label">Gross Revenue (MTD)</span>
+              <p class="kpi-value">KSh 348,500</p>
+              <span class="kpi-trend positive">&uarr; 18.4% vs last month</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Total Template Downloads</span>
+              <p class="kpi-value">1,429</p>
+              <span class="kpi-trend positive">&uarr; 24.1%</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Active Client Inquiries</span>
+              <p class="kpi-value">18</p>
+              <span class="kpi-trend neutral">4 pending review</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Average Order Value</span>
+              <p class="kpi-value">KSh 3,250</p>
+              <span class="kpi-trend positive">&uarr; $25.00 USD</span>
+            </div>
+          </div>
+          <div class="table-container">
+            <div class="table-header">
+              <h3>Recent Digital Orders</h3>
+              <span class="muted-text">Showing latest 5 customer purchases</span>
+            </div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Customer</th>
+                  <th>Template Item</th>
+                  <th>Amount</th>
+                  <th>Payment Channel</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#CT-9041</td>
+                  <td>Wanjiku M. (Nairobi)</td>
+                  <td>Luxe Salon & Business Website</td>
+                  <td>KSh 3,800</td>
+                  <td><span class="pill mpesa">M-Pesa</span></td>
+                  <td><span class="status-badge delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>#CT-9040</td>
+                  <td>David K. (London)</td>
+                  <td>CoderTech Admin Dashboard</td>
+                  <td>$39.00</td>
+                  <td><span class="pill card">Card / Stripe</span></td>
+                  <td><span class="status-badge delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>#CT-9039</td>
+                  <td>Brian O. (Kisumu)</td>
+                  <td>Product Landing Page</td>
+                  <td>Free</td>
+                  <td><span class="pill free">Direct</span></td>
+                  <td><span class="status-badge delivered">Downloaded</span></td>
+                </tr>
+                <tr>
+                  <td>#CT-9038</td>
+                  <td>Sarah T. (Mombasa)</td>
+                  <td>Startup Website Template</td>
+                  <td>Free</td>
+                  <td><span class="pill free">Direct</span></td>
+                  <td><span class="status-badge delivered">Downloaded</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

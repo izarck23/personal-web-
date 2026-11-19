@@ -1,11 +1,33 @@
-<div align="center">
+# CoderTech — Isaac, Software & App Developer (Kenya)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Portfolio, blog, template shop and AI project assistant.
+Built with TanStack Start, React, TypeScript and Tailwind CSS v4.
 
-  <h1>Built with AI Studio</h2>
+## Setup
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+```sh
+npm install      # or: bun install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+npx vitest run   # tests
+```
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+Termux: `pkg install nodejs` first. Edit in VS Code, Acode or any text editor.
 
-</div>
+## Structure
+
+```
+src/routes/          pages (index, blog, shop, templates/$slug, sitemap.xml)
+src/components/      portfolio + template-shop UI
+src/content/         editable content: articles.ts, projects.ts, templates.ts
+src/assets/          images
+src/styles.css       design tokens and styles
+public/templates/    standalone HTML/CSS/JS templates (no build needed)
+public/downloads/    ZIPs of those templates
+```
+
+## Configuration & Integrations
+
+- AI project assistant supports `GEMINI_API_KEY` or `OPENAI_API_KEY` (server env).
+- Contact form saves submissions to database and forwards inquiries to inbox via FormSubmit.
+- Template prices and payment checkout can be configured when payment delivery is established.

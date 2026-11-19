@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Create your account — Authentication Template</title>
+    <meta
+      name="description"
+      content="Editable HTML, CSS and JavaScript create your account screen."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- EDIT: brand, text and links below. Colours live in assets/css/styles.css (:root). Integration points are in assets/js/app.js. -->
+    <main class="auth">
+      <aside class="visual">
+        <a class="brand" href="index.html">workspace<span>.</span></a>
+        <div class="quote">
+          <h2>Your next chapter starts here.</h2>
+          <p>One calm, secure place for the ideas that matter.</p>
+        </div>
+        <p class="small">Demo copy — replace with your brand message.</p>
+      </aside>
+      <section class="panel">
+        <a class="brand mobile-brand" href="index.html">workspace<span>.</span></a>
+        <h1>Create your account</h1>
+        <p class="muted">Start free — it only takes a minute.</p>
+        <form id="auth-form" data-form="signup" novalidate>
+          <div class="social">
+            <button type="button" class="btn-social" data-provider="google">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="#4285F4"
+                  d="M22.6 12.3c0-.8-.1-1.5-.2-2.3H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-1.9 3.3-4.8 3.3-8z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1.1-3.7 1.1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0 0 12 23z"
+                />
+                <path fill="#FBBC05" d="M5.8 14.2a6.6 6.6 0 0 1 0-4.3V7.1H2.1a11 11 0 0 0 0 9.9z" />
+                <path
+                  fill="#EA4335"
+                  d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 7.1l3.7 2.8C6.7 7.3 9.1 5.4 12 5.4z"
+                /></svg
+              ><span>Continue with Google</span></button
+            ><button type="button" class="btn-social" data-provider="facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="#1877F2"
+                  d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"
+                /></svg
+              ><span>Continue with Facebook</span>
+            </button>
+          </div>
+          <div class="divider"><span>or use email</span></div>
+          <div class="field">
+            <label for="name">Full name</label
+            ><input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+              placeholder="Your name"
+            />
+            <p class="error" id="name-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              placeholder="you@example.com"
+            />
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="pw">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                required
+                minlength="8"
+                placeholder="At least 8 characters"
+              /><button
+                type="button"
+                class="toggle"
+                aria-label="Show password"
+                aria-pressed="false"
+                data-toggle="password"
+              >
+                Show
+              </button>
+            </div>
+            <p class="error" id="password-error" aria-live="polite"></p>
+          </div>
+          <div class="meter" aria-hidden="true"><span id="strength"></span></div>
+          <div class="field">
+            <label for="confirm">Confirm password</label>
+            <div class="pw">
+              <input
+                id="confirm"
+                name="confirm"
+                type="password"
+                autocomplete="new-password"
+                required
+                minlength="8"
+                placeholder="Repeat password"
+              /><button
+                type="button"
+                class="toggle"
+                aria-label="Show password"
+                aria-pressed="false"
+                data-toggle="confirm"
+              >
+                Show
+              </button>
+            </div>
+            <p class="error" id="confirm-error" aria-live="polite"></p>
+          </div>
+          <label class="check"
+            ><input type="checkbox" name="terms" required /> I agree to the terms and privacy
+            policy.</label
+          >
+          <button class="btn" type="submit">Create account</button>
+          <p class="status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="foot">Already have an account? <a href="index.html">Sign in</a></p>
+      </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reset your password — Authentication Template</title>
+    <meta
+      name="description"
+      content="Editable HTML, CSS and JavaScript reset your password screen."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- EDIT: brand, text and links below. Colours live in assets/css/styles.css (:root). Integration points are in assets/js/app.js. -->
+    <main class="auth">
+      <aside class="visual">
+        <a class="brand" href="index.html">workspace<span>.</span></a>
+        <div class="quote">
+          <h2>Your next chapter starts here.</h2>
+          <p>One calm, secure place for the ideas that matter.</p>
+        </div>
+        <p class="small">Demo copy — replace with your brand message.</p>
+      </aside>
+      <section class="panel">
+        <a class="brand mobile-brand" href="index.html">workspace<span>.</span></a>
+        <h1>Reset your password</h1>
+        <p class="muted">Enter your email and we will send a reset link.</p>
+        <form id="auth-form" data-form="reset" novalidate>
+          <div class="field">
+            <label for="email">Email address</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              placeholder="you@example.com"
+            />
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+          <button class="btn" type="submit">Send reset link</button>
+          <p class="status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="foot">Remembered it? <a href="index.html">Back to sign in</a></p>
+      </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

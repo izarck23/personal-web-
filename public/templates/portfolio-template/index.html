@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Developer & Creative Portfolio Template</title>
+    <meta
+      name="description"
+      content="Minimal, responsive developer portfolio template with project showcase, skills breakdown, and project enquiry form."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav-wrap">
+        <a href="#" class="brand">Coder<span>Folio</span></a>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#projects">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact" class="btn btn-sm">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="badge">Available for freelance & contracts</span>
+          <h1>Full-Stack Developer crafting reliable web & mobile applications.</h1>
+          <p class="lead">
+            Specialized in React, TypeScript, Kotlin Android, and high-performance cloud backends.
+          </p>
+          <div class="actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="title">Selected Projects</h2>
+        <p class="subtitle">A curation of production applications and client solutions.</p>
+        <div class="grid">
+          <div class="card">
+            <div class="card-tag">Android & Compose</div>
+            <h3>Genzii Originality Checker</h3>
+            <p>
+              Mobile application analyzing document originality, academic citations, and text
+              verification.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-tag">Full-Stack Web</div>
+            <h3>Digital Marketplace Platform</h3>
+            <p>
+              Template store featuring instant M-Pesa billing, ZIP source generation, and
+              multi-currency pricing.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-tag">Client Website</div>
+            <h3>Luxe Salon & Spa Portal</h3>
+            <p>
+              Full appointment booking site with live calendar slotting and automated confirmation
+              messages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-soft">
+      <div class="container narrow">
+        <h2 class="title">Start a Project</h2>
+        <p class="subtitle">Have an idea or need an existing codebase updated? Send a message.</p>
+        <form
+          class="contact-form"
+          onsubmit="
+            event.preventDefault();
+            document.getElementById('msg').textContent =
+              'Message sent! I will respond within 24 hours.';
+          "
+        >
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <textarea rows="4" placeholder="Brief project summary & timeline" required></textarea>
+          <button type="submit" class="btn btn-primary w-full">Send Project Inquiry</button>
+          <p id="msg" class="success-msg"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; Portfolio Template &bull; Created by CoderTech (Isaac, Kenya)</p>
+      </div>
+    </footer>
+  </body>
+</html>

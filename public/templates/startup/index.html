@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Startup Website Template</title>
+    <meta
+      name="description"
+      content="Editable HTML & CSS startup website template: hero, product, metrics, team, roadmap and contact."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- EDIT: replace placeholder text, numbers and names. Colours are in :root inside styles.css. -->
+    <header class="nav">
+      <a class="logo" href="#">startup<span>/</span>name</a>
+      <nav aria-label="Main">
+        <a href="#product">Product</a><a href="#team">Team</a><a href="#roadmap">Roadmap</a
+        ><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="tag">Seed stage · Your city</p>
+          <h1>We're building the future of <span>your industry</span>.</h1>
+          <p class="lead">One sentence on the problem you solve and who you solve it for.</p>
+          <a class="btn" href="#contact">Join the waitlist</a
+          ><a class="btn ghost" href="#product">How it works</a>
+        </div>
+        <div class="product-ui" aria-label="Sample product dashboard">
+          <div class="ui-top"><strong>Workspace</strong><span>Overview</span></div>
+          <div class="ui-main">
+            <p>Project overview</p>
+            <h2>Launch workspace</h2>
+            <div class="ui-status">In progress</div>
+            <ul>
+              <li>Product strategy <b>✓</b></li>
+              <li>Design direction <b>✓</b></li>
+              <li>Launch checklist <b>3 / 5</b></li>
+            </ul>
+            <div class="ui-progress"><span></span></div>
+            <p>Sample dashboard UI</p>
+          </div>
+        </div>
+      </section>
+      <section class="stats" aria-label="Key numbers — sample values to replace">
+        <div><b>00+</b><span>Your metric</span></div>
+        <div><b>00%</b><span>Your metric</span></div>
+        <div><b>0x</b><span>Your metric</span></div>
+        <div><b>00</b><span>Your metric</span></div>
+      </section>
+      <section id="product" class="section">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>
+            <h3>Sign up</h3>
+            <p>Describe step one.</p>
+          </li>
+          <li>
+            <h3>Connect</h3>
+            <p>Describe step two.</p>
+          </li>
+          <li>
+            <h3>Grow</h3>
+            <p>Describe step three.</p>
+          </li>
+        </ol>
+      </section>
+      <section id="team" class="section dark">
+        <h2>The team</h2>
+        <div class="grid">
+          <div class="person">
+            <div class="ph">F</div>
+            <h3>Founder name</h3>
+            <p>CEO</p>
+          </div>
+          <div class="person">
+            <div class="ph">C</div>
+            <h3>Co-founder name</h3>
+            <p>CTO</p>
+          </div>
+          <div class="person">
+            <div class="ph">D</div>
+            <h3>Team member</h3>
+            <p>Design</p>
+          </div>
+        </div>
+      </section>
+      <section id="roadmap" class="section">
+        <h2>Roadmap</h2>
+        <ul class="timeline">
+          <li><b>Q1</b> Prototype and first users</li>
+          <li><b>Q2</b> Public beta</li>
+          <li><b>Q3</b> Launch and fundraising</li>
+        </ul>
+      </section>
+      <section id="contact" class="section cta">
+        <h2>Get early access</h2>
+        <form
+          onsubmit="
+            event.preventDefault();
+            this.querySelector('output').textContent =
+              'Demo only — connect this form to your email or form service.';
+          "
+        >
+          <label class="sr" for="email">Email</label
+          ><input id="email" type="email" required placeholder="you@company.com" /><button
+            class="btn"
+            type="submit"
+          >
+            Join waitlist</button
+          ><output role="status"></output>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="foot-grid">
+        <div>
+          <a class="logo" href="#">startup<span>/</span>name</a>
+          <p>Your mission in one line. Demo content — replace before publishing.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#product">Product</a><a href="#team">Team</a><a href="#roadmap">Roadmap</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="#contact">Join waitlist</a
+          ><a href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy (add link)</a><a href="#">Terms (add link)</a>
+        </div>
+      </div>
+      <p class="foot-bottom">© Startup Name · Template by Isaac, Kenya</p>
+    </footer>
+  </body>
+</html>
